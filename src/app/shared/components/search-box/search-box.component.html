@@ -3,5 +3,7 @@
   [placeholder]="placeholder"
   class="form-control"
   (keyup.enter)="sendValue()"
+  (keypress)="onKeyPress(txtInput.value)"
+  [value]="initialValue"
   #txtInput
   >
